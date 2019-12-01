@@ -227,6 +227,22 @@ snippet " "Quotes" i
 endsnippet
 
 
+snippet frame "beamer frame" b
+\begin{frame}[${1:fragile}]{$2}
+	$0
+\end{frame}
+endsnippet
+
+snippet columns "beamer columns" b
+\begin{columns}
+  \begin{column}{${1:0.5\textwidth}}
+  $2
+  \end{column}
+  \begin{column}{${3:0.5\textwidth}}
+  $0
+  \end{column}
+\end{columns}
+endsnippet
 
 
 # vim:ft=snippets:
